@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design for Bootstrap</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="../../css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+  <!-- Start your project here-->
+  <div class="flex-center flex-column">
+    <ul class="nav nav-pills mb-3" id="step-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="step-home-tab" data-toggle="pill" href="#step-home" role="tab"
+            aria-controls="pills-home" aria-selected="true">Step 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="step-profile-tab" data-toggle="pill" href="#step-profile" role="tab"
+            aria-controls="step-profile" aria-selected="false">Step 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="step-contact-tab" data-toggle="pill" href="#step-contact" role="tab"
+            aria-controls="step-contact" aria-selected="false">Step 3</a>
+        </li>
+      </ul>
+      <div class="tab-content pt-2 pl-1" id="step-tabContent">
+        <div class="tab-pane fade show active" id="step-home" role="tabpanel" aria-labelledby="step-home-tab">
+            <form class="border border-light p-5" >
+                <div id='step-1'>
+                    <p class="h4 mb-4 text-center">General Information about Project</p>
+                    <p class="mb-4 text-center">Builder / Contractor(Fill relevant information)</p>
+
+                    <input class="form-control mb-4" id="defaultRegisterFormFirstName" type="text" placeholder="Name of Project *">
+
+                    <input class="form-control mb-4" id="textInput" type="text" placeholder="Address of Project with Land Mark *">
+
+                    <div class="input-group mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Upload</span>
+                        </div>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="fileInput" aria-describedby="fileInput" multiple>
+                            <label class="custom-file-label" for="fileInput">Site Map</label>
+                        </div>
+                    </div>
+
+                    <input class="form-control mb-4" id="textInput" type="text" placeholder="Name of the Client *">
+
+                    <input class="form-control mb-4" id="textInput" type="text" placeholder="Project Cost in Rs. *">
+
+                    <input class="form-control mb-4" id="textInput" type="text" placeholder="Applicants role with the project *">
+
+                    <input class="form-control mb-4" id="textInput" type="text" placeholder="Applicants scope *">
+
+                    <input class="form-control mb-4" id="textInput" type="text" placeholder="Cost of Applicant’s works *">
+
+                    <div class="md-form">
+                        <input placeholder="Selected date" type="date" id="date-picker-example" class="form-control datepicker">
+                        <label for="date-picker-example">Date of Commencement of work *</label>
+                    </div>
+                    <div class="md-form">
+                        <input placeholder="Selected date" type="date" id="date-picker-example" class="form-control datepicker">
+                        <label for="date-picker-example">Date of Completion, Scheduled *</label>
+                    </div>
+                    <div class="md-form">
+                        <input placeholder="Selected date" type="date" id="date-picker-example" class="form-control datepicker">
+                        <label for="date-picker-example">Date of Virtual Completion, Actual *</label>
+                    </div>
+
+                    <input class="form-control mb-4" id="textInput" type="text" placeholder="Cost of Project Completed Till Date *">
+
+
+
+                    <button class="btn btn-info my-4 btn-block" type="button" onclick="window.location.href='steps.html'">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="tab-pane fade" id="step-profile" role="tabpanel" aria-labelledby="step-profile-tab">
+            <form class="border border-light p-5">
+
+                <p class="h4 mb-4 text-center">Names of Consultants appointed:</p>
+                <input type="text" id="textInput" class="form-control mb-4" placeholder="Architect">
+                <input type="text" id="textInput" class="form-control mb-4" placeholder="Structural Consultant">
+                <input type="text" id="textInput" class="form-control mb-4" placeholder="Plumbing Consultant">
+                <input type="text" id="textInput" class="form-control mb-4" placeholder="Fire Consultant">
+                <input type="text" id="textInput" class="form-control mb-4" placeholder="Landscaping Consultant">
+                <input type="text" id="textInput" class="form-control mb-4" placeholder="HVAC Consultant">
+                <input type="text" id="textInput" class="form-control mb-4" placeholder="Electrical Consultant">
+                <input type="text" id="textInput" class="form-control mb-4" placeholder="Interior Designer, if any">
+                <input type="text" id="textInput" class="form-control mb-4" placeholder="Project Management Consultant">
+                <input type="text" id="textInput" class="form-control mb-4" placeholder="MoEF Consultant">
+                <label for="textInput"><b>Approvals, NOCs, certificates from PMC, PH Dept.,<br>
+                    CFO, MoEF, GRIHA etc. (attach copies)</b></label>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Upload</span>
+                    </div>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="fileInput" aria-describedby="fileInput" multiple>
+                        <label class="custom-file-label" for="fileInput">Select multiple files, if any</label>
+                    </div>
+                </div>
+                <label for="textInput"><b>Is the project rated as green project?</b></label>
+                <!-- Default unchecked -->
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+                        <label class="custom-control-label" for="defaultUnchecked">YES</label>
+                    </div>
+                    <!-- Default checked -->
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked>
+                        <label class="custom-control-label" for="defaultChecked">NO</label>
+                    </div>
+                <label for="textInput"><b>If yes, give details(attach copies)</b></label>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Upload</span>
+                    </div>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="fileInput" aria-describedby="fileInput" multiple>
+                        <label class="custom-file-label" for="fileInput">Select multiple files, if any</label>
+                    </div>
+                </div>
+                <button class="btn btn-info btn-block my-4" type="button" >Next</button>
+
+            </form>
+        </div>
+        <div class="tab-pane fade" id="step-contact" role="tabpanel" aria-labelledby="step-contact-tab">
+
+        </div>
+      </div>
+
+
+  </div>
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript" src="js/myjs.js"></script>
+
+</body>
+</html>

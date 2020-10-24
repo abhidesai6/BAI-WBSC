@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design for Bootstrap</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="../../css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <!-- Stepper CSS -->
+  <link href="../../css/addons-pro/steppers.css" rel="stylesheet">
+  <!-- Stepper CSS - minified-->
+  <link href="../..css/addons-pro/steppers.min.css" rel="stylesheet">
+
+  <!-- Stepper JavaScript -->
+  <script type="text/javascript" src="../..js/addons-pro/steppers.js"></script>
+  <!-- Stepper JavaScript - minified -->
+  <script type="text/javascript" src="../..js/addons-pro/steppers.min.js"></script>
+</head>
+
+<body>
+
+  <div class="image-container" style="text-align:center;">
+    <a><img src="../../assets/header.jpg" class="img-fluid" alt="BAI WBSC 2020"></a>
+  </div>
+
+  <div>
+    <ul class="nav justify-content-center grey lighten-4 py-4">
+      <li class="nav-item">
+        <a class="nav-link " onclick="location.href='../../index.html'">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Apply online</a>
+      </li>
+      <a class="nav-link" href="https://www.baionline.in/About-BAI.html">About</a>
+      </li>
+    </ul>
+  </div>
+
+
+
+
+
+  <div class="container-fluid">
+    <!-- Horizontal Steppers -->
+    <div class="row">
+      <div class="col-md-12">
+
+        <!-- Stepers Wrapper -->
+        <ul class="stepper stepper-horizontal">
+
+          <!-- First Step -->
+          <li class="completed">
+            <a href="#step-home">
+              <span class="circle">1</span>
+              <span class="label">First step</span>
+            </a>
+          </li>
+
+          <!-- Second Step -->
+          <li class="incomplete">
+            <a class="nav-link" onclick="location.href='form2.html'">
+              <span class="circle">2</span>
+              <span class="label">Second step</span>
+            </a>
+          </li>
+
+          <!-- Third Step -->
+          <li class="incomplete">
+            <a href="#!">
+              <span class="circle">3</span>
+              <span class="label">Third step</span>
+            </a>
+          </li>
+
+        </ul>
+        <!-- /.Stepers Wrapper -->
+        <div class="container">
+          <div class="mt-2">
+            <div class="row">
+              <div class="col-3">
+                <div class="sticky-top">
+                  <div id="list-example" class="list-group">
+                    <a class="list-group-item list-group-item-action active" href="#list-item-1">General Information about Project</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-2">Names of Consultants appointed</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-9">
+                <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example z-depth-1">
+                  <h4 id="list-item-1">
+                    <!--General Information about Project-->
+                  </h4>
+
+                  <!-- step 1-1 -->
+                  <form class="border border-light p-5">
+                    <div id='step-1'>
+                      <p class="h4 mb-4 text-center">General Information about Project</p>
+                      <p class="mb-4 text-center">Builder / Contractor(Fill relevant information)</p>
+
+                      <input class="form-control mb-4" id="defaultRegisterFormFirstName" type="text" placeholder="Name of Project *">
+
+                      <input class="form-control mb-4" id="textInput" type="text" placeholder="Address of Project with Land Mark *">
+
+                      <div class="input-group mb-4">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">Upload</span>
+                        </div>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="fileInput" aria-describedby="fileInput" multiple>
+                          <label class="custom-file-label" for="fileInput">Site Map</label>
+                        </div>
+                      </div>
+
+                      <input class="form-control mb-4" id="textInput" type="text" placeholder="Name of the Client *">
+
+                      <input class="form-control mb-4" id="textInput" type="text" placeholder="Project Cost in Rs. *">
+
+                      <input class="form-control mb-4" id="textInput" type="text" placeholder="Applicants role with the project *">
+
+                      <input class="form-control mb-4" id="textInput" type="text" placeholder="Applicants scope *">
+
+                      <input class="form-control mb-4" id="textInput" type="text" placeholder="Cost of Applicant’s works *">
+
+                      <div class="md-form">
+                        <input placeholder="Selected date" type="date" id="date-picker-example" class="form-control datepicker">
+                        <label for="date-picker-example">Date of Commencement of work *</label>
+                      </div>
+                      <div class="md-form">
+                        <input placeholder="Selected date" type="date" id="date-picker-example" class="form-control datepicker">
+                        <label for="date-picker-example">Date of Completion, Scheduled *</label>
+                      </div>
+                      <div class="md-form">
+                        <input placeholder="Selected date" type="date" id="date-picker-example" class="form-control datepicker">
+                        <label for="date-picker-example">Date of Virtual Completion, Actual *</label>
+                      </div>
+
+                      <input class="form-control mb-4" id="textInput" type="text" placeholder="Cost of Project Completed Till Date *">
+                    </div>
+                  </form>
+                </div>
+                <!-- step 1-1 -->
+
+                <h4 id="list-item-2">
+                  <!--Names of Consultants appointed-->
+                </h4>
+
+                <!-- step 1-2 -->
+                <div>
+                  <form class="border border-light p-5">
+                    <div id="step-2">
+                      <p class="h4 mb-4 text-center">Names of Consultants appointed:</p>
+                      <input type="text" id="textInput" class="form-control mb-4" placeholder="Architect">
+                      <input type="text" id="textInput" class="form-control mb-4" placeholder="Structural Consultant">
+                      <input type="text" id="textInput" class="form-control mb-4" placeholder="Plumbing Consultant">
+                      <input type="text" id="textInput" class="form-control mb-4" placeholder="Fire Consultant">
+                      <input type="text" id="textInput" class="form-control mb-4" placeholder="Landscaping Consultant">
+                      <input type="text" id="textInput" class="form-control mb-4" placeholder="HVAC Consultant">
+                      <input type="text" id="textInput" class="form-control mb-4" placeholder="Electrical Consultant">
+                      <input type="text" id="textInput" class="form-control mb-4" placeholder="Interior Designer, if any">
+                      <input type="text" id="textInput" class="form-control mb-4" placeholder="Project Management Consultant">
+                      <input type="text" id="textInput" class="form-control mb-4" placeholder="MoEF Consultant">
+                      <label for="textInput"><b>Approvals, NOCs, certificates from PMC, PH Dept.,<br>
+                          CFO, MoEF, GRIHA etc. (attach copies)</b></label>
+                      <div class="input-group mb-4">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">Upload</span>
+                        </div>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="fileInput" aria-describedby="fileInput" multiple>
+                          <label class="custom-file-label" for="fileInput">Select multiple files, if any</label>
+                        </div>
+                      </div>
+                      <label for="textInput"><b>Is the project rated as green project?</b></label>
+                      <!-- Default unchecked -->
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+                        <label class="custom-control-label" for="defaultUnchecked">YES</label>
+                      </div>
+                      <!-- Default checked -->
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked>
+                        <label class="custom-control-label" for="defaultChecked">NO</label>
+                      </div>
+                      <label for="textInput"><b>If yes, give details(attach copies)</b></label>
+                      <div class="input-group mb-4">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">Upload</span>
+                        </div>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="fileInput" aria-describedby="fileInput" multiple>
+                          <label class="custom-file-label" for="fileInput">Select multiple files, if any</label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- step 1-2 -->
+
+
+
+                <h4 id="list-item-3">Item 3</h4>
+
+                <h4 id="list-item-4">Item 4</h4>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- /.Horizontal Steppers -->
+  </div>
+
+
+
+  <!-- Footer -->
+    <footer class="page-footer font-small blue">
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://mdbootstrap.com/"> BAI-WBSC2020 </a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+
+
+    <!-- End your project here-->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript"></script>
+
+</body>
