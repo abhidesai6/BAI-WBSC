@@ -18,70 +18,148 @@
   <!-- Your custom styles (optional) -->
   <link rel="stylesheet" href="../../css/style.css">
 </head>
-<body>
+<body style="background-color: lightskyblue;">
+   <!-- Navbar -->
+   <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar black">
+    <div class="container">
 
-  <!-- Start your project here-->
-  <div style="height: 100vh">
-    <div class="flex-center flex-column">
-        <form class="border border-light p-5">
+      <!-- Brand -->
+      <a class="navbar-brand" href="" target="_blank">
+        <strong>BAI WBSC</strong>
+      </a>
 
-            <p class="h4 mb-4 text-center">Sign in</p>
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-            <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" onclick="window.location.href='landing.html'">HOME
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="window.location.href='landing.html#whoweare'" target="">WHO WE ARE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="window.location.href='landing.html#about'" target="">ABOUT WBSC</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="window.location.href='landing.html#guideline'" target="">GUIDELINES FOR WBSC</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://mdbootstrap.com/education/bootstrap/" target="_blank">CONTACT US</a>
+          </li>
+        </ul>
 
-            <div class="d-flex justify-content-between">
-                <div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
-                        <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
-                    </div>
-                </div>
-                <!-- <div>
-                    <a href="">Forgot password?</a>
-                </div> -->
-            </div>
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <!-- <li class="nav-item">
+            <a href="https://www.facebook.com/mdbootstrap" class="nav-link" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://twitter.com/MDBootstrap" class="nav-link" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li> -->
+          <li class="nav-item">
+            <a onclick="window.location.href='signup.html'" class="nav-link border border-light rounded"
+              target="_blank" >
+              SignUp
+            </a>
+          </li>
+        </ul>
 
-            <button class="btn btn-info btn-block my-4" type="submit" onclick="location.href='../../form.html'">Sign in</button>
-
-            <div class="text-center">
-                <p>Not a member?
-                    <a href='signup.html'>Register</a>
-                </p>
-
-                <!-- <p>or sign in with:</p>
-                <a type="button" class="light-blue-text mx-2">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a type="button" class="light-blue-text mx-2">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a type="button" class="light-blue-text mx-2">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a type="button" class="light-blue-text mx-2">
-                    <i class="fab fa-github"></i>
-                </a> -->
-            </div>
-        </form>
-
-
+      </div>
 
     </div>
+  </nav>
+  <!-- Start your project here-->  
+  <div >
+    <div class="view full-page-intro flex-center flex-column col-sm">
+          <br><br><br>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <h1  class="display-4 font-weight-bold">BAI's <br> WELL BUILT STRUCTURE <br><h1 class="display-5 font-weight-bold"> COMPETITION</h1> </h1>
+            </div>
+            <div class="col-sm">
+              <form class="border border-light p-5" id='step-1' style="background-color: white;">
+                <div class="card">
+                  <img src="img/BAI Header (with ISO).jpg" alt="">
+                </div>
+                <br>
+                <p class="h4 mb-4 text-center">Sign in</p>
+                <div class="md-form">
+                  <i class="fas fa-envelope prefix"></i>
+                  <input type="email" class="form-control" id="defaultLoginFormEmail">
+                  <label for="form3">E-mail</label>
+                </div>
+                <div class="md-form">
+                  <i class="fas fa-unlock prefix"></i>              
+                  <input type="password" id="defaultLoginFormPassword" class="form-control mb-4">
+                  <label for="form3">Password</label>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                            <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+                        </div>
+                    </div>
+                    
+                </div>
+                <button class="btn btn-info btn-block my-4" onclick="window.location.href='../../main.html'" type="button" >
+                  Sign in
+                </button>
+            
+                <div class="text-center">
+                    <p>Not a member?
+                        <a href='signup.html'>Register</a>
+                    </p>
+                </div>
+            </form>
+            
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
   <!-- End your project here-->
+  <!--Footer-->
+  <footer class="page-footer fixed-bottom text-center font-small mt-4 wow fadeIn">
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2020 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> BAI PUNE </a>
+    </div>
+    <!--/.Copyright-->
 
-  <!-- jQuery -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="js/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!-- Your custom scripts (optional) -->
-  <script type="text/javascript"></script>
-
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
 </body>
+
 </html>
