@@ -50,7 +50,8 @@
   </style>
 </head>
 
-<body style="background-image: url('../../assets/arch1.jpg');background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
+<body
+  style="background-image: url('../../assets/arch1.jpg');background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
 
   <!-- Navbar -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar black">
@@ -83,7 +84,7 @@
           <li class="nav-item">
             <a class="nav-link" href="../../common/static_ui/rules.html" target="">ABOUT WBSC</a>
           </li>
-          <li clas  s="nav-item">
+          <li clas s="nav-item">
             <a class="nav-link" href="../../index.html#Guidelines" target="">GUIDELINES FOR
               WBSC</a>
           </li>
@@ -126,11 +127,11 @@
           <div class=" container col-md-6 text-center mt-5 ">
 
 
-              <hr style="color: black;">
-              <h1 class="display-4 font-weight-bold " style="color: black;">BAI's <br> WELL BUILT STRUCTURE <br>
-                <h1 class="display-5 font-weight-bold" style="color: black;"> COMPETITION</h1>
-              </h1>
-              <hr style="color: black;">
+            <hr style="color: black;">
+            <h1 class="display-4 font-weight-bold " style="color: black;">BAI's <br> WELL BUILT STRUCTURE <br>
+              <h1 class="display-5 font-weight-bold" style="color: black;"> COMPETITION</h1>
+            </h1>
+            <hr style="color: black;">
 
           </div>
           <div class="container col-md-6">
@@ -140,9 +141,13 @@
               </div>
               <br><br>
               <p class="h4 mb-4 text-center">Sign up</p>
+              <div class ="row">
+              <div class="container col-md-6"><input class="form-control mb-4" id="defaultRegisterFormFirstName"
+                  type="text" placeholder="First Name  *"></div>
 
-              <input class="form-control mb-4" id="defaultRegisterFormFirstName" type="text"
-                placeholder="Name of Applicant *">
+              <div class="container col-md-6"><input class="form-control mb-4" id="defaultRegisterFormFirstName"
+                  type="text" placeholder="Last Name *"></div>
+              </div>
 
               <input class="form-control mb-4" id="defaultRegisterFormLastName" type="text"
                 placeholder="Designation of Applicant *">
@@ -169,7 +174,7 @@
 
               <!-- <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">Optional - for two step authentication</small> -->
 
-              <button class="btn btn-info my-4 btn-block" type="submit">Sign up</button>
+              <button class="btn btn-info my-4 btn-block" type="submit" onclick="myFunction()"> Sign up</button>
 
               <div class="text-center">
                 <p>Already a member?
@@ -210,9 +215,14 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="../../js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
-  <script type="text/javascript">
+  <script type="../../text/javascript">
     // Animations initialization
     new WOW().init();
+  </script>
+  <script>
+    function myFunction() {
+      alert("SignUp successful");
+    }
   </script>
 </body>
 
