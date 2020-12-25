@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Builder's Association of India</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="../../css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!-- Stepper CSS -->
+    <link href="../../css/addons-pro/steppers.css" rel="stylesheet">
+    <!-- Stepper CSS - minified-->
+    <link href="../..css/addons-pro/steppers.min.css" rel="stylesheet">
+
+    <!-- Stepper JavaScript -->
+    <script type="text/javascript" src="../..js/addons-pro/steppers.js"></script>
+    <!-- Stepper JavaScript - minified -->
+    <script type="text/javascript" src="../..js/addons-pro/steppers.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target="#list-example" data-offset="0">
+
+    <nav class="navbar  navbar-expand-lg navbar-dark scrolling-navbar indigo">
+        <div class="container">
+
+            <!-- Brand -->
+            <a class="navbar-brand white-text" onclick='location.href="../../main.html"'>
+                <strong>BAI-WBSC</strong>
+            </a>
+
+            <!-- Collapse -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- Left -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="location.href='../../main.html'">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick='href="../profiles/profile.html"'>Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick='href="../../main.html#contact"'>Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Right -->
+                <ul class="navbar-nav nav-flex-icons">
+
+                    <li class="nav-item">
+                        <a onclick="location.href='../static_ui/rules1.html'"
+                            class="nav-link border border-light rounded waves-effect" target="_blank">
+                            About WBSC
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+        <!-- Horizontal Steppers -->
+        <div class="row">
+            <div class="col-md-12">
+
+                <!-- Stepers Wrapper -->
+                <ul class="stepper stepper-horizontal">
+
+                    <!-- First Step -->
+                    <li class="completed">
+                        <a class="nav-link" onclick="location.href='form1.html'">
+                            <span class="circle">1</span>
+                            <span class="label">First step</span>
+                        </a>
+                    </li>
+
+                    <!-- Second Step -->
+                    <li class="completed">
+                        <a href="#">
+                            <span class="circle">2</span>
+                            <span class="label">Second step</span>
+                        </a>
+                    </li>
+
+                    <!-- Third Step -->
+                    <li class="incomplete">
+                        <a class="nav-link" onclick="location.href='form3.html'">
+                            <span class="circle">3</span>
+                            <span class="label">Third step</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <!-- /.Stepers Wrapper -->
+                <div class="container">
+                    <div class="mt-2">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="sticky-top">
+                                    <div id="list-example" class="list-group">
+                                        <a class="list-group-item list-group-item-action"
+                                            href="form2.html">Economy</a>
+                                        <a class="list-group-item list-group-item-action"
+                                            href="#list-item-2">Safety/Welfare</a>
+                                        <a class="list-group-item list-group-item-action" href="form 2-3.html">Others</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="scrollspy-example z-depth-1">
+                                    <h4 id="list-item-2">
+                                        <!--Names of Consultants appointed-->
+                                    </h4>
+                                    <!--step 2-2-->
+                                    <div>
+                                        <form class="border border-light p-5" id="list-item-2">
+                                            <p class="h4 mb-4 text-center">Safety/Welfare</p>
+                                            <p class="mb-4 text-center">Builder / Contractor(Fill relevant information)
+                                            </p>
+                                            <div class="form-row">
+                                                <div class="col-9">
+                                                    <label for="textInput"><b>1. Was safety on site being
+                                                            monitored?*</b></label>
+                                                </div>
+                                                <div class="col-3">
+                                                    {{}}
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col-9">
+                                                  <label for="textInput"><b>If yes, by whom? *</b></label><br>
+                                                </div>
+                                                <div class="col-3">
+                                                    {{}}
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col-9">
+                                                    <label for="textInput"><b>2. Enlist safety measures / equipment
+                                                            adopted on site <br>
+                                                            during execution in terms of Barricading, signage,
+                                                            nets, <br> firefighting, equipment to workers, safe <br>
+                                                            electrical supply etc. *</b></label><br>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="md-form mt-0">
+                                                      {{}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col-9">
+                                                    <label for="textInput"><b>3. Was medical aid available on site
+                                                            during execution?</b></label>
+                                                </div>
+                                                <div class="col-3">
+                                                    {{}}
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col-9">
+                                                    <label for="textInput"><b>4. Were there any safety related incidents
+                                                            or near-miss
+                                                            on site? *</b></label>
+                                                </div>
+                                                <div class="col-3">
+                                                    {{}}
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col-9">
+                                                    <label for="textInput"><b>5. Provide documents showing safety
+                                                            audits, if done.</b></label><br>
+                                                </div>
+                                                <div class="col-3">
+                                                    {{}}
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-info my-4 btn-block" type="button" onclick="window.location.href='form 2-3.html'">Next</button>
+                                            <!--<button class="btn btn-info my-4 btn-block" type="button" onclick="window.location.href='form3.html'">Next</button>-->
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.Horizontal Steppers -->
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/"> BAI-WBSC2020 </a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+
+    <!-- End your project here-->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="../../js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../../js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript"></script>
+
+</body>
+
+</html>
