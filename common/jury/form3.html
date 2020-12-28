@@ -231,43 +231,46 @@
                               <!--Grid row-->
                               <div class="row">
                                 <div class="col-sm">
-                                  <br>
-                                  <div class="row" style="width:100%">
-                                    <div class="col-sm">
-                                      <label class="h5" for="">Payment Method : </label>
+                                    <br>
+                                    <div class="row" style="width:100%">
+                                      <div class="col-sm">
+                                            <label class="h5" for="">Payment Method : </label>
+                                        </div>
+                                        <div class="col-sm">
+                                            {{}}
+                                        </div>
                                     </div>
-                                    <div class="col-sm">
-                                      {{}}
+                                    <div class="row" style="width:100%">
+                                      <div class="col-sm">
+                                            <label class="h5" for="">Transaction Date : </label>
+                                        </div>
+                                        <div class="col-sm">
+                                          {{}}
+                                        </div>
                                     </div>
-                                  </div>
-                                  <div class="row" style="width:100%">
-                                    <div class="col-sm">
-                                      <label class="h5" for="">Transaction Date : </label>
+                                    <div class="row" style="width:100%">
+                                      <div class="col-sm">
+                                            <label class="h5" for="">Transaction ID / Cheque Number : </label><br>
+                                        </div>
+                                        <div class="col-sm">
+                                            {{}}
+                                        </div>
                                     </div>
-                                    <div class="col-sm">
-                                      {{}}
+                                    <div class="row" style="width:100%">
+                                      <div class="col-sm">
+                                            <label class="h5" for="">Bank Details : </label> <br>
+                                        </div>
+                                        <div class="col-sm">
+                                            {{}}
+                                        </div>
                                     </div>
-                                  </div>
-                                  <div class="row" style="width:100%">
-                                    <div class="col-sm">
-                                      <label class="h5" for="">Transaction ID / Cheque Number : </label><br>
+                                    <div class="text-center text-md-center">
+                                      <a class="btn btn-primary">Verify Details</a>
                                     </div>
-                                    <div class="col-sm">
-                                      {{}}
-                                    </div>
-                                  </div>
-                                  <div class="row" style="width:100%">
-                                    <div class="col-sm">
-                                      <label class="h5" for="">Bank Details : </label> <br>
-                                    </div>
-                                    <div class="col-sm">
-                                      {{}}
-                                    </div>
-                                  </div>
                                 </div>
 
 
-                                <!--Grid row-->
+                              <!--Grid row-->
 
                             </form>
 
@@ -282,36 +285,11 @@
                       </section>
                       <!--Section: Contact v.2-->
                     </div>
-                    <hr>
+                    <hr>  
                     <div class="container">
-                      <button class="btn btn-info my-4 btn-block" type="submit" style="width: 500px;"
-                        data-toggle="modal" data-target="#exampleModalCenter" id="submit">Verify Details</button>
+                      <button class="btn btn-info my-4 btn-block" type="button"
+                        onclick="window.location.href='form3.html'" style="width: 500px;">Submit</button>
                     </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-                      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-
-                      <div class="modal-dialog modal-dialog-centered" role="document">
-
-
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">
-                              <p class="text-center">SignUp Successful</p>
-                            </h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <img src="../../assets/correct.png" alt="Avatar" style="width:180px;height:180px;">
-                            <h6>Your account has been created successfully.<br><br>Check your email for activating your
-                              account.</h6>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Modal -->
 
                     <div style="height:10px;">
                     </div>
@@ -350,19 +328,7 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="../../js/mdb.min.js"></script>
     <!-- Your custom scripts (optional) -->
-    <script type="text/javascript">
-      $('.toggle-password').on('click', function () {
-        $(this).toggleClass('fa-eye fa-eye-slash');
-        let input = $($(this).attr('toggle'));
-        if (input.attr('type') == 'password') {
-          input.attr('type', 'text');
-        }
-        else {
-          input.attr('type', 'password');
-        }
-      });
-      new WOW().init();
-    </script>
+    <script type="text/javascript"></script>
 
 </body>
 

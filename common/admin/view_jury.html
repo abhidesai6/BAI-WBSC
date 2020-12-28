@@ -85,29 +85,73 @@
             <div class="sticky-top">
               <div id="list-example" class="list-group">
                 <a class="list-group-item list-group-item-action" href="add_jury.html">Add New Jury</a>
-                <a class="list-group-item list-group-item-action " href="view_jury.html">View Added Juries</a>
+                <a class="list-group-item list-group-item-action active" href="view_jury.html">View Added Juries</a>
               </div>
             </div>
           </div>
-          <div class="col-md-9">
-            <p class="h4 mb-4 text-center">List of Juries Added</p>
-            <div class="row z-depth-1 blue lighten-4">
-              <div class="col-sm-4 tex-center" >
-                  <div class="flex-left col-sm" style="width: 100%; height:100%">
-                      <h4 class="display-5 mt-3 font-weight-bold">No.[JURY]</h4>
-                  </div>
-              </div>
-              <div class="col-sm-4 tex-center" >
-                  <div class="flex-left col-sm" style="width: 100%; height:100%">
-                    <h5 class="display-5 mt-3"> </h5>
-                  </div>
-              </div>
-              <div class="col-sm-4">
-                <button class="btn success-color my-2 btn-block text-white font-weight-bold hoverable" type="button"
-                    onclick="window.location.href='submittedforms_notver.html'">Edit Details</button>
+          <!-- Editable table -->
+
+          <div class="card col-md-9">
+            <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Editable table</h3>
+            <div class="card-body">
+              <div id="table" class="table-editable">
+                <span class="table-add float-right mb-3 mr-2"><a href="add_jury.html" class="text-success"><i
+                      class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span>
+                <table class="table table-bordered table-responsive-md table-striped text-center">
+                  <thead>
+                    <tr>
+                      <th class="text-center">Jury Name</th>
+                      <th class="text-center">Designation</th>
+                      <th class="text-center">Phone Number</th>
+                      <th class="text-center">Edit Details</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="pt-3-half" contenteditable="true">Aurelia Vega</td>
+                      <td class="pt-3-half" contenteditable="true">Civil Engineer</td>
+                      <td class="pt-3-half" contenteditable="true">123</td>
+                      <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-active btn-rounded btn-sm my-0">Edit Details</button></span>
+                      </td>
+                    </tr>
+                    <!-- This is our clonable table line -->
+                    <tr>
+                      <td class="pt-3-half" contenteditable="true">Guerra Cortez</td>
+                      <td class="pt-3-half" contenteditable="true">Arch</td>
+                      <td class="pt-3-half" contenteditable="true">123</td>
+                      <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-active btn-rounded btn-sm my-0">Edit Details</button></span>
+                      </td>
+                    </tr>
+                    <!-- This is our clonable table line -->
+                    <tr>
+                      <td class="pt-3-half" contenteditable="true">Guadalupe House</td>
+                      <td class="pt-3-half" contenteditable="true">Design</td>
+                      <td class="pt-3-half" contenteditable="true">123</td>
+                      <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-active btn-rounded btn-sm my-0">Edit Details</button></span>
+                      </td>
+                    </tr>
+                    <!-- This is our clonable table line -->
+                    <tr class="hide">
+                      <td class="pt-3-half" contenteditable="true">Elisa Gallagher</td>
+                      <td class="pt-3-half" contenteditable="true">Arch</td>
+                      <td class="pt-3-half" contenteditable="true">123</td>
+                      <td>
+                        <span class="table-remove"><button type="button"
+                            class="btn btn-active btn-rounded btn-sm my-0">Edit Details</button></span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
+          <!-- Editable table -->
         </div>
       </div>
     </div>
@@ -116,18 +160,18 @@
 
 
 
-      <!-- /.Horizontal Steppers -->
+    <!-- /.Horizontal Steppers -->
 
 
-      <!-- Footer -->
-      <footer class="page-footer font-small blue fixed-bottom">
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-          <a href="https://mdbootstrap.com/"> BAI-WBSC2020 </a>
-        </div>
-        <!-- Copyright -->
-      </footer>
-      <!-- Footer -->
+    <!-- Footer -->
+    <footer class="page-footer font-small blue fixed-bottom">
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://mdbootstrap.com/"> BAI-WBSC2020 </a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
   </main>
 
 
@@ -135,13 +179,13 @@
   <!-- End your project here-->
 
   <!-- jQuery -->
-  <script type="text/javascript" src="../../js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="../../js/popper.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="../../js/mdb.min.js"></script>
+  <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
   <script type="text/javascript"></script>
 

@@ -2,18 +2,22 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Builder's Association of India</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
   <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
   <!-- Material Design Bootstrap -->
-  <link href="css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/mdb.min.css">
   <!-- Your custom styles (optional) -->
-  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
   <style type="text/css">
     html,
     body,
@@ -124,7 +128,7 @@
             <a class="nav-link" href="#" >Who We Are</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./common/profiles/profile.html" >Profile</a>
+            <a class="nav-link" href="../common/profiles/profile.html" >Profile</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" onclick='href="#contact"' >Contact</a>
@@ -133,9 +137,9 @@
 
         <!-- Right -->
         <ul class="navbar-nav nav-flex-icons">
-          
+
           <li class="nav-item">
-              <a onclick="location.href='./common/static_ui/rules1.html'" class="nav-link border border-light rounded waves-effect"
+              <a onclick="location.href='../common/static_ui/rules1.html'" class="nav-link border border-light rounded waves-effect"
                   target="_blank">
                   About WBSC
               </a>
@@ -167,9 +171,8 @@
 
             <hr class="hr-light">
 
-            <a target="_blank" onclick="location.href='./common/Form/category.html'" class="btn btn btn-lg border border ">Apply for New
-            </a>
-            <a target="_blank" onclick="location.href='./common/Form/form1.html'" class="btn btn btn-lg border border">Edit Existing
+            <a target="_blank" onclick="location.href='evaluate.html'" class="btn btn btn-lg border border ">Evaluate Forms
+            <a target="_blank" onclick="location.href='evaluated_forms.html'" class="btn btn btn-lg border border">View Evaluated Forms
             </a>
           </div>
           <!--Grid column-->
@@ -200,7 +203,7 @@
           <!--Grid column-->
           <div class="col-md-6 mb-4">
 
-            <img src="assets\backdrop.jpg" class="img-fluid z-depth-1-half" alt="">
+            <img src="..\..\assets\backdrop.jpg" class="img-fluid z-depth-1-half" alt="">
 
           </div>
           <!--Grid column-->
@@ -228,7 +231,7 @@
       <hr class="my-5">
 
       <!--Section: Main features & Quick Start-->
-      
+
 
       <hr class="my-5">
 
@@ -237,7 +240,7 @@
 
         <h2 class="my-5 h3 text-center">Awards & Categories</h2>
 
-        
+
         <!--First row-->
         <div class="row features-small mb-5 mt-3 wow fadeIn">
 
@@ -248,7 +251,7 @@
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="assets\trophy.png" alt="Avatar" style="width:200px;height:200px;">
+                  <img src="..\..\assets\trophy.png" alt="Avatar" style="width:200px;height:200px;">
                 </div>
                 <div class="flip-card-back">
                   <div class="card" style="width:297px;height:200px;">
@@ -265,7 +268,7 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="assets\shirke-award.png" alt="Avatar" style="width:200px;height:200px;">
+                <img src="..\..\assets\shirke-award.png" alt="Avatar" style="width:200px;height:200px;">
               </div>
               <div class="flip-card-back">
                 <div class="card" style="width:297px;height:200px;">
@@ -352,7 +355,7 @@
           </div>
           <!--/First column-->
 
-         
+
 
           <!--Third column-->
           <div class="col-md-4 mt-2">
@@ -421,7 +424,9 @@
       <hr class="mb-5">
 
       <!--Section: More-->
-      
+
+      <hr class="mb-5">
+
       <div class="container border border-grey" id='contact'>
         <!--Section: Contact v.2-->
         <section class="mb-4 container">
@@ -429,31 +434,82 @@
           <!--Section heading-->
           <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
           <!--Section description-->
+          <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+            a matter of hours to help you.</p>
 
           <div class="row">
 
             <!--Grid column-->
-            <div class="col-md-8 mb-md-0 mb-5">
-              <div class="container-fluid center ">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.9683071839468!2d73.85959561469122!3d18.53033427371229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c08a781b349f%3A0x3dc30b012363a9a9!2sBuilders&#39;%20Association%20of%20India%2C%20Pune%20Centre!5e0!3m2!1sen!2sin!4v1608922792853!5m2!1sen!2sin"
-                  width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                  tabindex="0"></iframe>
+            <div class="col-md-9 mb-md-0 mb-5">
+              <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                    <div class="md-form mb-0">
+                      <input type="text" id="name" name="name" class="form-control">
+                      <label for="name" class="">Your name</label>
+                    </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                    <div class="md-form mb-0">
+                      <input type="text" id="email" name="email" class="form-control">
+                      <label for="email" class="">Your email</label>
+                    </div>
+                  </div>
+                  <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="md-form mb-0">
+                      <input type="text" id="subject" name="subject" class="form-control">
+                      <label for="subject" class="">Subject</label>
+                    </div>
+                  </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-12">
+
+                    <div class="md-form">
+                      <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                      <label for="message">Your message</label>
+                    </div>
+
+                  </div>
+                </div>
+                <!--Grid row-->
+
+              </form>
+
+              <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
               </div>
-              <br>
               <div class="status"></div>
             </div>
             <!--Grid column-->
             <!--Grid column-->
-            <div class="col-md-4 text-center">
+            <div class="col-md-3 text-center">
               <ul class="list-unstyled mb-0">
                 <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                  <p class="text-left">No 23,24 & 25, 2nd Floor Sangam Project Phase II,Near RTO Office Road,Sangam
-                    Bridge, Sangamvadi,Pune, Maharashtra,411001</p>
+                  <p class="text-left">No 23,24 & 25, 2nd Floor Sangam Project Phase II,Near RTO Office Road,Sangam Bridge, Sangamvadi,Pune, Maharashtra,411001</p>
                 </li>
 
                 <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                  <p>+020 26059255<br />26057440<br />26057441</p>
+                  <p>+020 26059255<br/>26057440<br/>26057441</p>
                 </li>
 
                 <li><i class="fas fa-envelope mt-4 fa-2x"></i>
@@ -473,45 +529,31 @@
   </main>
   <!--Main layout-->
 
-  <!--Footer-->
+
   <footer class="page-footer text-center font-small mt-4 wow fadeIn">
 
-    <!--Call to action-->
-    <div class="pt-4">
-      <a class="btn btn-outline-white" href="#" role="button">Admin
-        <i class="fas fa-envelope ml-2"></i>
-      </a>
-    </div>
-    <!--/.Call to action-->
 
     <hr class="my-4">
 
-
-    <!--Copyright-->
     <div class="footer-copyright py-3">
       © 2019 Copyright:
       <a href="#home" target="_blank"> BAI-WBSC-2020 </a>
     </div>
-    <!--/.Copyright-->
+    <!-- /.Copyright -->
 
   </footer>
-  
-  <!--/.Footer-->
-
-  <!-- SCRIPTS -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- jQuery -->
+  <script type="text/javascript" src="../../js/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="../../js/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!-- Initializations -->
-  <script type="text/javascript">
-    // Animations initialization
-    new WOW().init();
-  </script>
+  <script type="text/javascript" src="../../js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
 </body>
+
 
 </html>

@@ -47,6 +47,34 @@
         background: #1C2331 !important;
       }
     }
+
+    input[type=text].form-control.valid+label:after,
+    input[type=text].form-control:focus.valid+label:after,
+    input[type=text].form-control.invalid+label:after,
+    input[type=text].form-control:focus.invalid+label:after,
+    input[type=password].form-control.valid+label:after,
+    input[type=password].form-control:focus.valid+label:after,
+    input[type=password].form-control.invalid+label:after,
+    input[type=password].form-control:focus.invalid+label:after {
+      top: 3.75rem !important;
+    }
+
+    span.field-icon {
+      position: absolute;
+      display: inline-block;
+      cursor: pointer;
+      right: 0.5rem;
+      top: 0.7rem;
+      color: grey;
+      z-index: 2;
+    }
+
+    .edited-box {
+      background-color: #093;
+      padding: 8px;
+      margin: 8px;
+
+    }
   </style>
 </head>
 
@@ -121,10 +149,10 @@
   <div class="container-fluid">
     <div class="flex-center flex-column col-sm">
       <div style="height: 100px;"></div>
-      <div class="container text-center">
+      <div class="container-fluid text-center">
         <div class="row">
 
-          <div class=" container col-md-6 text-center mt-5 ">
+          <div class="container col-md-6 row-center text-center mt-5 position-relative ">
 
 
             <hr style="color: black;">
@@ -134,54 +162,65 @@
             <hr style="color: black;">
 
           </div>
-          <div class="container col-md-6">
+          <div class="col-md-6">
             <form class="border border-light p-5" style="background-color: white;">
-              <div class="card">
-                <img src="img/BAI Header (with ISO).jpg" alt="">
-              </div>
               <br><br>
               <p class="h4 mb-4 text-center">Sign up</p>
-              <div class="row">
-                <div class="container col-md-6"><input class="form-control mb-4" id="defaultRegisterFormFirstName"
-                    type="text" placeholder="First Name  *"></div>
+              <div class="form-row">
+                <div class="col-md-6 ">
+                  <div class="md-form md-outline"><input class="form-control mb-4" id="defaultRegisterFormFirstName"
+                      type="text" required><label for="defaultRegisterFormFirstName">First
+                      Name</label></div>
+                </div>
 
-                <div class="container col-md-6"><input class="form-control mb-4" id="defaultRegisterFormFirstName"
-                    type="text" placeholder="Last Name *"></div>
+                <div class="col-md-6">
+                  <div class="md-form md-outline"><input class="form-control mb-4" id="defaultRegisterFormLastName"
+                      type="text" required><label for="defaultRegisterFormLastName">Last
+                      Name</label></div>
+                </div>
               </div>
 
-              <input class="form-control mb-4" id="defaultRegisterFormLastName" type="text"
-                placeholder="Designation of Applicant *">
 
-              <input class="form-control mb-4" id="defaultRegisterFormEmail" type="text"
-                placeholder="Name of Firm / Company *">
+              <div class="md-form md-outline"><input class="form-control mb-4" id="defaultRegisterDesignation"
+                  type="text" required /><label for="defaultRegisterDesignation">Designation of Applicant</label></div>
+
+              <div class="md-form md-outline"><input class="form-control mb-4" id="defaultRegisterFirm" type="text"
+                  required /><label for="defaultRegisterFirm">Name of Firm / Company</label></div>
 
               <label for="textarea">Address *</label>
-              <textarea id="textarea" class="form-control mb-4" placeholder="Full Address"></textarea>
+              <textarea id="textarea" class="form-control mb-4" placeholder="Full Address" required></textarea>
 
               <label for="textarea">Membership/s of construction related associations <br> (other than BAI)</label>
-              <textarea id="textarea" class="form-control mb-4" placeholder="Mention in points"></textarea>
+              <textarea id="textarea" class="form-control mb-4" placeholder="Mention in points" required></textarea>
 
-              <input type="text" id="defaultRegisterPhonePassword" class="form-control mb-4" placeholder="Phone number"
-                aria-describedby="defaultRegisterFormPhoneHelpBlock">
 
-              <input class="form-control mb-4" id="emailInput" type="email" placeholder="Email ">
+              <div class="md-form md-outline"><input class="form-control mb-4" id="defaultRegisterPhonePassword"
+                  type="tel" name="phone" pattern="{^\+?[0-9-]+$}" aria-describedby="defaultRegisterFormPhoneHelpBlock"
+                  required><label for="defaultRegisterPhonePassword">Phone Number</label></div>
 
-              <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password"
-                aria-describedby="defaultRegisterFormPasswordHelpBlock">
+              <div class="md-form md-outline"><input class="form-control mb-4" id="emailInput" type="email"
+                  required><label for="emailInput">Email</label></div>
 
-              <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">Minimal 8 characters
-                lenght</small>
+              <div class="md-form md-outline">
+                <input class="form-control validate" id="defaultRegisterFormPassword" data-error="wrong" data-success="right" type="password"
+                  pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\\S+$).{8, 20}$" minlength="8"
+                  required>
+                <label  for="defaultRegisterFormPassword\">Password</label>
+                <span toggle="#defaultRegisterFormPassword" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+
+
+              </div>
+
 
               <!-- <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">Optional - for two step authentication</small> -->
 
-              <button type="button" id="myBtn" class="btn btn-info my-4 btn-block" data-toggle="modal"
+              <button type="submit" id="submit" class="btn btn-info my-4 btn-block" data-toggle="modal"
                 data-target="#exampleModalCenter"> Sign up</button>
 
               <!-- Modal -->
-              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+              <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 
-                <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
                 <div class="modal-dialog modal-dialog-centered" role="document">
 
 
@@ -196,12 +235,13 @@
                     </div>
                     <div class="modal-body">
                       <img src="../../assets/correct.png" alt="Avatar" style="width:180px;height:180px;">
-                      <h6>Your has been created successfully.<br><br>Check your email for activating your account.</h6>
+                      <h6>Your account has been created successfully.<br><br>Check your email for activating your
+                        account.</h6>
                     </div>
                   </div>
                 </div>
-              </div>
-
+              </div> -->
+              <!-- Modal -->
               <div class="text-center">
                 <p>Already a member?
                   <a href='login.html'>Log In</a>
@@ -251,29 +291,21 @@
     }
   </script> -->
   <script>
-    var modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on the button, open the modal
-    btn.onclick = function () {
-      modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-      modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
+    $('.toggle-password').on('click', function () {
+      $(this).toggleClass('fa-eye fa-eye-slash');
+      let input = $($(this).attr('toggle'));
+      if (input.attr('type') == 'password') {
+        input.attr('type', 'text');
       }
+      else {
+        input.attr('type', 'password');
+      }
+    });
+    function checkPassword(str) {
+      // at least one number, one lowercase and one uppercase letter
+      // at least six characters that are letters, numbers or the underscore
+      var re = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{6,}$/;
+      return re.test(str);
     }
   </script>
 </body>
